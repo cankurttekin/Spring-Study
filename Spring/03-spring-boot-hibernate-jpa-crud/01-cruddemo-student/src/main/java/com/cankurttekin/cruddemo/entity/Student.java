@@ -33,7 +33,6 @@ public class Student {
     }
 
     // define getters/setters
-
     public int getId() {
         return id;
     }
