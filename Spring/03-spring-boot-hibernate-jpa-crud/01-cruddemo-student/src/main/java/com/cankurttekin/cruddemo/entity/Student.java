@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class Student {
 
     //define fields
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
@@ -23,6 +22,9 @@ public class Student {
     private String email;
 
     // define constructors
+    public Student() {
+
+    }
 
     public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
