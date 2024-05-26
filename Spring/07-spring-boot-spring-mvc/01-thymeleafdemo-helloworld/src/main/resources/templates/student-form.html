@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Student Resgistration Form</title>
     <!--<link rel="stylesheet" th:href="@{/css/demo.css}">-->
@@ -22,6 +22,12 @@
                             th:each="tempLang : ${languages}"
                             th:value="${tempLang}"
                             th:text="${tempLang}"/>
+    <br><br>
+        Favorite Operating Systems:
+        <input type="checkbox" th:field="*{favoriteSystems}"
+                                th:each="tempSystem : ${systems}"
+                                th:value="${tempSystem}"
+                                th:text="${tempSystem}"/>
     <br><br>
     <input type="submit" value="Submit"/>
 
